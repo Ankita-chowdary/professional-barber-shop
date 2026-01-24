@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CUT | Premium Barbershop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #d4af37; /* Metallic Gold */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-gold { background-color: var(--accent); }
+        .text-gold { color: var(--accent); }
+        .border-gold { border-color: var(--accent); }
+        
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/90 text-white backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="serif text-2xl font-bold tracking-tighter">THE <span class="text-gold">CUT</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium tracking-widest uppercase">
+                    <a href="#home" class="hover:text-gold transition-colors">Home</a>
+                    <a href="#services" class="hover:text-gold transition-colors">Services</a>
+                    <a href="#barbers" class="hover:text-gold transition-colors">Team</a>
+                    <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+                </div>
+                <div>
+                    <a href="#contact" class="bg-gold hover:bg-yellow-600 text-black px-6 py-3 rounded-none text-xs font-bold uppercase tracking-widest transition-all">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="serif text-5xl md:text-7xl mb-6 italic">Precision & Style</h1>
+            <p class="text-lg md:text-xl text-zinc-300 mb-10 font-light tracking-wide">Exquisite grooming services for the modern gentleman in the heart of the city.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="border border-white hover:bg-white hover:text-black px-8 py-4 transition-all uppercase text-xs font-bold tracking-widest">View Menu</a>
+                <a href="#contact" class="bg-gold border border-gold text-black px-8 py-4 hover:bg-transparent hover:text-white transition-all uppercase text-xs font-bold tracking-widest">Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="serif text-4xl mb-4">Our Services</h2>
+                <div class="h-1 w-20 bg-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-10">
+                <!-- Service Item -->
+                <div class="flex justify-between items-end border-b border-zinc-200 pb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">Classic Haircut</h3>
+                        <p class="text-zinc-500 text-sm">Scissors or clippers, includes wash & style.</p>
+                    </div>
+                    <span class="text-gold font-bold text-lg">$45</span>
+                </div>
+                
+                <!-- Service Item -->
+                <div class="flex justify-between items-end border-b border-zinc-200 pb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">Beard Sculpting</h3>
+                        <p class="text-zinc-500 text-sm">Trim, shape, and hot towel finish.</p>
+                    </div>
+                    <span class="text-gold font-bold text-lg">$30</span>
+                </div>
+
+                <!-- Service Item -->
+                <div class="flex justify-between items-end border-b border-zinc-200 pb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">Signature Shave</h3>
+                        <p class="text-zinc-500 text-sm">Straight razor shave with aromatic oils.</p>
+                    </div>
+                    <span class="text-gold font-bold text-lg">$40</span>
+                </div>
+
+                <!-- Service Item -->
+                <div class="flex justify-between items-end border-b border-zinc-200 pb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">The Full Experience</h3>
+                        <p class="text-zinc-500 text-sm">Haircut, beard trim, and facial massage.</p>
+                    </div>
+                    <span class="text-gold font-bold text-lg">$95</span>
+                </div>
+
+                <!-- Service Item -->
+                <div class="flex justify-between items-end border-b border-zinc-200 pb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">Skin Fade</h3>
+                        <p class="text-zinc-500 text-sm">Ultra-precise transition with foil shaver finish.</p>
+                    </div>
+                    <span class="text-gold font-bold text-lg">$55</span>
+                </div>
+
+                <!-- Service Item -->
+                <div class="flex justify-between items-end border-b border-zinc-200 pb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-1">Junior Cut</h3>
+                        <p class="text-zinc-500 text-sm">For the little gentlemen under 12.</p>
+                    </div>
+                    <span class="text-gold font-bold text-lg">$30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="barbers" class="py-24 bg-zinc-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="serif text-4xl mb-4">Master Barbers</h2>
+                <p class="text-zinc-500 uppercase tracking-widest text-xs">The craft of the blade</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden bg-white shadow-sm card-hover">
+                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=600" alt="Barber" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-bold uppercase tracking-tighter">Marco Rossi</h4>
+                        <p class="text-zinc-500 text-sm">Founder & Creative Director</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden bg-white shadow-sm card-hover">
+                    <img src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&q=80&w=600" alt="Barber" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-bold uppercase tracking-tighter">Elias Vaughn</h4>
+                        <p class="text-zinc-500 text-sm">Senior Barber</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden bg-white shadow-sm card-hover">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" alt="Barber" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-bold uppercase tracking-tighter">James Miller</h4>
+                        <p class="text-zinc-500 text-sm">Straight Razor Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking -->
+    <section id="contact" class="py-24 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="serif text-4xl mb-8">Visit Us</h2>
+                <div class="space-y-6 text-zinc-400">
+                    <div>
+                        <h5 class="text-white font-bold uppercase tracking-widest text-xs mb-2">Location</h5>
+                        <p>123 Barber Street, Soho<br>London, W1D 1AB</p>
+                    </div>
+                    <div>
+                        <h5 class="text-white font-bold uppercase tracking-widest text-xs mb-2">Hours</h5>
+                        <p>Mon - Fri: 09:00 - 20:00<br>Sat: 10:00 - 18:00<br>Sun: Closed</p>
+                    </div>
+                    <div>
+                        <h5 class="text-white font-bold uppercase tracking-widest text-xs mb-2">Contact</h5>
+                        <p>Tel: +44 20 7946 0000<br>Email: hello@thecut.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-zinc-900 p-8 rounded-sm">
+                <h3 class="text-xl font-semibold mb-6">Request Appointment</h3>
+                <form id="bookingForm" class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" class="bg-zinc-800 border-none p-3 text-sm focus:ring-1 focus:ring-gold outline-none" required>
+                        <input type="email" placeholder="Email Address" class="bg-zinc-800 border-none p-3 text-sm focus:ring-1 focus:ring-gold outline-none" required>
+                    </div>
+                    <select class="w-full bg-zinc-800 border-none p-3 text-sm focus:ring-1 focus:ring-gold outline-none text-zinc-400">
+                        <option>Select Service</option>
+                        <option>Classic Haircut</option>
+                        <option>Beard Sculpting</option>
+                        <option>The Full Experience</option>
+                    </select>
+                    <textarea rows="4" placeholder="Preferred Date & Time / Special Requests" class="w-full bg-zinc-800 border-none p-3 text-sm focus:ring-1 focus:ring-gold outline-none"></textarea>
+                    <button type="submit" class="w-full bg-gold text-black py-4 font-bold uppercase tracking-widest hover:bg-yellow-600 transition-colors">
+                        Submit Request
+                    </button>
+                </form>
+                <div id="successMsg" class="hidden mt-4 text-gold text-center font-medium">
+                    Thank you! We will contact you to confirm your slot.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-black border-t border-zinc-800 text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="#" class="text-zinc-500 hover:text-white transition-colors">Instagram</a>
+            <a href="#" class="text-zinc-500 hover:text-white transition-colors">Facebook</a>
+            <a href="#" class="text-zinc-500 hover:text-white transition-colors">Yelp</a>
+        </div>
+        <p class="text-zinc-600 text-xs tracking-widest uppercase">© 2024 THE CUT BARBERSHOP. ESTABLISHED IN LONDON.</p>
+    </footer>
+
+    <script>
+        // Form Submission Logic
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('hidden');
+            document.getElementById('successMsg').classList.remove('hidden');
+        });
+
+        // Simple scroll spy for nav background
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
