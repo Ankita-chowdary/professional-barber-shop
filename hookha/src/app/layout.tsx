@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "A premium scroll journey.",
 };
 
+import Navbar from "@/components/Navbar";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,8 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfair.variable} antialiased`}
+        className={`${inter.variable} ${playfair.variable} antialiased bg-black`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
